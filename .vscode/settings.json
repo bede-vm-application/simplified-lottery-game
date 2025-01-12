@@ -1,0 +1,6 @@
+{
+  "csharp.debug.console": "integratedTerminal",
+  "csharp.preview.improvedLaunchExperience": true,
+  "dotnet.backgroundAnalysis.analyzerDiagnosticsScope": "fullSolution",
+  "editor.formatOnSave": true
+}

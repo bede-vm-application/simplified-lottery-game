@@ -1,0 +1,30 @@
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 4
+insert_final_newline = true
+trim_trailing_whitespace = false
+
+[*.cs]
+# IDE0009: Member access should be qualified.
+dotnet_style_qualification_for_field = true:warning
+dotnet_style_qualification_for_property = true:warning
+dotnet_style_qualification_for_method = true:warning
+dotnet_style_qualification_for_event = true:warning
+
+# IDE0079: Remove unnecessary suppression
+dotnet_diagnostic.IDE0079.severity = none
+
+# CS8604: Possible null reference argument.
+dotnet_diagnostic.CS8604.severity = error
+
+# CS8625: Cannot convert null literal to non-nullable reference type.
+dotnet_diagnostic.CS8625.severity = error
+
+[*.{csproj,json}]
+indent_size = 2
+
+[*.sln]
+indent_style = tab
